@@ -4,11 +4,13 @@ Sync your Collection and Singleton schemas from JSON files, located on cloud.
 
 ## Prequisities
 
-[CloudStorage](https://github.com/agentejo/CloudStorage) addon is required, since it adds required libraries.
+* This addon depends on [CloudStorage](https://github.com/agentejo/CloudStorage).
 
 ## Configuration
 
-Add `schemas` FileStorage namespace configuration directly to `cloudstorage` configs.
+SchemaSync utilizes great cloud storage support introduced by CloudStorage addon, so you can add your 
+required `schemas` FileStorage namespace configuration directly to `cloudstorage` section of the `config.yml`. 
+Plugin is only tested against AWS S3, butit should work just fine with other block storage services that CloudStorage supports.
 
 ```
 cloudstorage:
